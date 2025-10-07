@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 
-import aboutImg from '../../../assets/images/about/about-1.jpg';
-
-class About extends Component {
+class Outsource extends Component {
   render() {
     let title = 'About',
       description =
         'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,';
     return (
       <React.Fragment>
-        <div className="about-wrapper">
+        <div className="outsource-wrapper">
           <div className="container">
-            <div className="row row--35 align-items-center">
-              <div className="col-lg-5 col-md-12"></div>
+            <div className="outsource">
+              <div className="inner">
+                <span>Ready To Do This</span>
+                <h2>
+                  Let's get <br /> to work
+                </h2>
+              </div>
             </div>
           </div>
         </div>
@@ -20,4 +23,4 @@ class About extends Component {
     );
   }
 }
-export default About;
+export default Outsource;

@@ -13,10 +13,12 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@tailwindcss/vite": "^4.1.14",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
     "bootstrap": "^4.6.1",
     "google-map-react": "^2.2.1",
+    "motion": "^12.23.22",
     "ogl": "^1.0.11",
     "photoswipe": "^5.4.4",
     "react": "^18.3.1",
@@ -36,6 +38,7 @@
     "react-tilt": "^1.0.2",
     "sass": "^1.80.6",
     "slick-carousel": "^1.8.1",
+    "tailwindcss": "^4.1.14",
     "yarn": "^1.22.22"
   },
   "devDependencies": {
