@@ -13,7 +13,7 @@ import Portfolio from '../component/HomeLayout/homeOne/Portfolio';
 import BlogContent from '../elements/blog/BlogContent';
 import BrandTwo from '../elements/BrandTwo';
 import Helmet from '../component/common/Helmet';
-import Outsource from '../component/outsource/Outsource';
+import Slogan from '../elements/Slogan';
 
 class MainDemo extends Component {
   render() {
@@ -29,11 +29,11 @@ class MainDemo extends Component {
         </div>
         {/* End Slider Area   */}
 
-        {/* Start About Area */}
-        <div className="about-area about-position-top pb--120 bg_color--1">
-          <Outsource />
+        {/* Start Slogan Area */}
+        <div className="swiper-area swiper-position-top pb--120 bg_color--1">
+          <Slogan />
         </div>
-        {/* End About Area */}
+        {/* End Slogan Area */}
 
         {/* Start Service Area  */}
         <div className="service-area ptb--80  bg_image bg_image--3">

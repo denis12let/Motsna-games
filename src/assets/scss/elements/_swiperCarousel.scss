@@ -1,0 +1,115 @@
+// .swiper {
+//   height: 50vh;
+//   width: 100vw;
+// overflow: visible;
+//   transform: skewY(6deg) rotateZ(6deg);
+
+//   .drag-cursor {
+//     height: 7vw;
+//     width: 7vw;
+//     background-color: #a374ff;
+//     position: absolute;
+//     z-index: 99;
+//     border-radius: 50%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+//     opacity: 0;
+
+//     span {
+//       font-size: 1vw;
+//       color: #fff;
+//       text-align: center;
+//     }
+//   }
+
+//   .swiper-slide {
+//     height: 90vh;
+//     width: 40vw;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     perspective: 1000px;
+
+//     .image {
+//       height: 55vh;
+//       width: 35vw;
+//       border-radius: 30px;
+//       overflow: hidden;
+//       transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+//     }
+
+//     .zoomed {
+//       height: 55vh;
+//       width: 35vw;
+//       border-radius: 30px;
+//       object-fit: cover;
+//       transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+//     }
+
+//     .texts {
+//       padding: 1vh 5vw;
+//       position: relative;
+//       top: -15vh;
+//       transform: skewY(-7deg) rotateZ(-7deg);
+//       opacity: 0;
+//       transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+//       p {
+//         font-size: 2vw;
+//         color: #fff;
+//       }
+
+//       h3 {
+//         font-size: 3vw;
+//         color: #fff;
+//         font-family: 'antique', sans-serif;
+//       }
+
+//       .label {
+//         font-size: 1vw;
+//         text-transform: uppercase;
+//         mix-blend-mode: difference;
+//       }
+//     }
+//   }
+// }
+
+.swiper-area {
+  // padding: 100px 0 100px;
+}
+
+.swiper {
+  overflow: visible;
+  width: 100vw;
+  // transform: skewY(6deg) rotateZ(6deg);
+  transform: rotateY('angle');
+  & .image {
+    height: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: contain;
+    transform: scale(0.8);
+  }
+  & .zoomed {
+    background-color: #fff;
+    transition: transform 0.8s ease;
+  }
+
+  & .swiper-slide {
+    overflow: hidden;
+    &:hover {
+      & .zoomed {
+        transform: scale(1.25);
+        transition: transform 0.8s ease;
+      }
+      & .image {
+      }
+    }
+    & .texts {
+      position: absolute;
+      visibility: hidden;
+    }
+  }
+}

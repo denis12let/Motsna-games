@@ -168,7 +168,7 @@ const RotatingText = forwardRef((props, ref) => {
           layout
           aria-hidden="true"
         >
-          <div style={currentColor ? { background: currentColor, borderRadius: '10px', padding: '0 12px' } : {}}>
+          <div style={currentColor ? { background: currentColor, borderRadius: '10px', padding: '0 12px', transition: '2s' } : {}}>
             {elements.map((wordObj, wordIndex, array) => {
               const previousCharsCount = array.slice(0, wordIndex).reduce((sum, word) => sum + word.characters.length, 0);
               return (
