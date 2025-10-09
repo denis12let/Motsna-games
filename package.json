@@ -17,6 +17,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
     "bootstrap": "^4.6.1",
+    "framer-motion": "^12.23.22",
     "google-map-react": "^2.2.1",
     "motion": "^12.23.22",
     "ogl": "^1.0.11",

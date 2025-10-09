@@ -4,6 +4,9 @@ import ServiceOne from '../../elements/service/ServiceOne';
 import RotatingText from '../../components/RotatingText';
 
 import logoBig from '../../assets/images/logo/big-logo.svg';
+import appStore from '../../assets/images/stores/APPLE.svg';
+import googlePlay from '../../assets/images/stores/GOOGLE.svg';
+import inImg from '../../assets/images/stores/in.svg';
 
 class SliderOne extends Component {
   render() {
@@ -52,6 +55,19 @@ class SliderOne extends Component {
                     </div>
                   </div>
                 </div>
+                {/* <div className="store-footer">
+                  <div className="footer-stores">
+                    <div className="app-store store">
+                      <img src={appStore} alt="" />
+                    </div>
+                    <div className="google-play store">
+                      <img src={googlePlay} alt="" />
+                    </div>
+                  </div>
+                  <div className="footer-in store">
+                    <img src={inImg} alt="" />
+                  </div>
+                </div> */}
               </div>
             </div>
           </div>

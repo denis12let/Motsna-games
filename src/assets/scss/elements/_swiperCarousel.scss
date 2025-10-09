@@ -1,115 +1,96 @@
-// .swiper {
-//   height: 50vh;
-//   width: 100vw;
-// overflow: visible;
-//   transform: skewY(6deg) rotateZ(6deg);
-
-//   .drag-cursor {
-//     height: 7vw;
-//     width: 7vw;
-//     background-color: #a374ff;
-//     position: absolute;
-//     z-index: 99;
-//     border-radius: 50%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-//     opacity: 0;
-
-//     span {
-//       font-size: 1vw;
-//       color: #fff;
-//       text-align: center;
-//     }
-//   }
-
-//   .swiper-slide {
-//     height: 90vh;
-//     width: 40vw;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     perspective: 1000px;
-
-//     .image {
-//       height: 55vh;
-//       width: 35vw;
-//       border-radius: 30px;
-//       overflow: hidden;
-//       transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
-//     }
-
-//     .zoomed {
-//       height: 55vh;
-//       width: 35vw;
-//       border-radius: 30px;
-//       object-fit: cover;
-//       transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
-//     }
-
-//     .texts {
-//       padding: 1vh 5vw;
-//       position: relative;
-//       top: -15vh;
-//       transform: skewY(-7deg) rotateZ(-7deg);
-//       opacity: 0;
-//       transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-
-//       p {
-//         font-size: 2vw;
-//         color: #fff;
-//       }
-
-//       h3 {
-//         font-size: 3vw;
-//         color: #fff;
-//         font-family: 'antique', sans-serif;
-//       }
-
-//       .label {
-//         font-size: 1vw;
-//         text-transform: uppercase;
-//         mix-blend-mode: difference;
-//       }
-//     }
-//   }
-// }
-
-.swiper-area {
-  // padding: 100px 0 100px;
-}
-
 .swiper {
-  overflow: visible;
-  width: 100vw;
-  // transform: skewY(6deg) rotateZ(6deg);
-  transform: rotateY('angle');
+  margin-top: -100px;
+  transform: skewY(0deg) rotateX(10deg) rotateZ(5deg);
+  margin-left: -5vw !important;
   & .image {
-    height: 100%;
+    // height: 100%;
     border-radius: 50px;
     overflow: hidden;
-    object-fit: contain;
-    transform: scale(0.8);
+    width: 100%;
+
+    // object-fit: contain;
+    // transform: scale(0.8);
   }
   & .zoomed {
-    background-color: #fff;
-    transition: transform 0.8s ease;
+    // background-color: #fff;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 500px;
+    transition: transform 1.2s ease;
   }
 
   & .swiper-slide {
-    overflow: hidden;
+    position: relative;
+    // width: 650px !important;
+    // height: 600px !important;
+    // transform-style: flat !important;
+
     &:hover {
       & .zoomed {
         transform: scale(1.25);
-        transition: transform 0.8s ease;
+        transition: transform 1.2s ease;
       }
       & .image {
       }
+      & .texts {
+        z-index: 100;
+        visibility: visible;
+        opacity: 1;
+        transform: skewY(0deg) rotateX(10deg) rotateZ(-5deg) translateY(0%);
+        transition: all 0.6s ease;
+      }
     }
+
     & .texts {
+      max-width: 400px;
+      width: 100%;
+      height: 100%;
       position: absolute;
       visibility: hidden;
+      // transform: skewY(0deg) rotateZ(-10deg);
+      color: #fff;
+      font-weight: 700;
+
+      opacity: 0;
+      transform: skewY(0deg) rotateX(10deg) rotateZ(-5deg) translateY(20%);
+      transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 40px;
+      box-sizing: border-box;
+      margin-bottom: 50px;
     }
   }
 }
+
+.panorama-swiper {
+  width: 110vw;
+  height: 100%;
+  overflow: visible;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  transition: all 0.8s ease;
+}
+
+.panorama-swiper .swiper-wrapper {
+  align-items: center;
+}
+
+.panorama-swiper .swiper-slide {
+  height: 80%;
+  transition: all 0.8s ease;
+  display: flex;
+  align-items: center;
+}
+
+// .panorama-swiper .zoomed {
+//   transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+// }

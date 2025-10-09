@@ -1,37 +1,33 @@
-import React, { Component } from "react";
-import PageHelmet from "../component/common/Helmet";
-import Breadcrumb from "../elements/common/Breadcrumb";
-import CounterOne from "../elements/counters/CounterOne";
-import Testimonial from "../elements/Testimonial";
-import BrandTwo from "../elements/BrandTwo";
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import ScrollToTop from "react-scroll-up";
-import { FiChevronUp } from "react-icons/fi";
-import Header from "../component/header/Header";
-import Footer from "../component/footer/Footer";
+import React, { Component } from 'react';
+import PageHelmet from '../component/common/Helmet';
+import Breadcrumb from '../elements/common/Breadcrumb';
+import CounterOne from '../elements/counters/CounterOne';
+import Testimonial from '../elements/Testimonial';
+import BrandTwo from '../elements/BrandTwo';
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import ScrollToTop from 'react-scroll-up';
+import { FiChevronUp } from 'react-icons/fi';
+import Header from '../component/header/Header';
+import Footer from '../component/footer/Footer';
 
-import about from "../assets/images/about/about-3.jpg";
-import findingImg from "../assets/images/about/finding-us-01.png";
-import teamImg1 from "../assets/images/team/team-01.jpg";
-import teamImg2 from "../assets/images/team/team-02.jpg";
-import teamImg3 from "../assets/images/team/team-03.jpg";
+import about from '../assets/images/about/about-3.jpg';
+import findingImg from '../assets/images/about/finding-us-01.png';
+import teamImg1 from '../assets/images/team/team-01.jpg';
+import teamImg2 from '../assets/images/team/team-02.jpg';
+import teamImg3 from '../assets/images/team/team-03.jpg';
 
 class About extends Component {
   render() {
-    let title = "About",
+    let title = 'About',
       description =
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going.";
+        'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going.';
     return (
       <React.Fragment>
         <PageHelmet pageTitle="About" />
 
-        <Header
-          headertransparent="header--transparent"
-          colorblack="color--black"
-          logoname="logo.png"
-        />
+        <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
         {/* Start Breadcrump Area */}
-        <Breadcrumb title={"About"} />
+        <Breadcrumb title={'About'} />
         {/* End Breadcrump Area */}
 
         {/* Start About Area  */}
@@ -41,11 +37,7 @@ class About extends Component {
               <div className="row row--35 align-items-center">
                 <div className="col-lg-5">
                   <div className="thumbnail">
-                    <img
-                      className="w-100"
-                      src={about}
-                      alt="About Images"
-                    />
+                    <img className="thumbnail-img" src={about} alt="About Images" />
                   </div>
                 </div>
                 <div className="col-lg-7">
@@ -58,19 +50,13 @@ class About extends Component {
                       <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div className="about-us-list">
                           <h3 className="title">Who we are</h3>
-                          <p>
-                            There are many vtions of passages of Lorem Ipsum
-                            available, but the majority have suffered.
-                          </p>
+                          <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div className="about-us-list">
                           <h3 className="title">Who we are</h3>
-                          <p>
-                            There are many vtions of passages of Lorem Ipsum
-                            available, but the majority have suffered.
-                          </p>
+                          <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
                         </div>
                       </div>
                     </div>
@@ -104,9 +90,8 @@ class About extends Component {
               <div className="content">
                 <h4 className="theme-gradient">Find Your Work Now</h4>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that.
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                  layout. The point of using Lorem Ipsum is that.
                 </p>
                 <a className="rn-btn btn-white" href="/about">
                   Get Started
@@ -129,10 +114,7 @@ class About extends Component {
               <div className="col-lg-12">
                 <div className="section-title service-style--3 text-center mb--25">
                   <h2 className="title">Skilled Team</h2>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration.
-                  </p>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                 </div>
               </div>
             </div>
@@ -141,11 +123,7 @@ class About extends Component {
               <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div className="team">
                   <div className="thumbnail">
-                    <img
-                      className="w-100"
-                      src={teamImg1}
-                      alt="Blog Images"
-                    />
+                    <img className="w-100" src={teamImg1} alt="Blog Images" />
                   </div>
                   <div className="content">
                     <h4 className="title">Jone Due</h4>
@@ -176,11 +154,7 @@ class About extends Component {
               <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div className="team">
                   <div className="thumbnail">
-                    <img
-                      className="w-100"
-                      src={teamImg2}
-                      alt="Blog Images"
-                    />
+                    <img className="w-100" src={teamImg2} alt="Blog Images" />
                   </div>
                   <div className="content">
                     <h4 className="title">BM. Alamin</h4>
@@ -211,11 +185,7 @@ class About extends Component {
               <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div className="team">
                   <div className="thumbnail">
-                    <img
-                      className="w-100"
-                      src={teamImg3}
-                      alt="Blog Images"
-                    />
+                    <img className="w-100" src={teamImg3} alt="Blog Images" />
                   </div>
                   <div className="content">
                     <h4 className="title">Jone Due</h4>

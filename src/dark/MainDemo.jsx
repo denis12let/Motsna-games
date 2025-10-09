@@ -8,12 +8,12 @@ import SliderOne from '../component/slider/SliderOne';
 import ServiceTwo from '../elements/service/ServiceTwo';
 import CounterOne from '../elements/counters/CounterOne';
 import Testimonial from '../elements/Testimonial';
-import About from '../component/HomeLayout/homeOne/About';
 import Portfolio from '../component/HomeLayout/homeOne/Portfolio';
 import BlogContent from '../elements/blog/BlogContent';
 import BrandTwo from '../elements/BrandTwo';
 import Helmet from '../component/common/Helmet';
 import Slogan from '../elements/Slogan';
+import About from '../elements/about/About';
 
 class MainDemo extends Component {
   render() {
@@ -32,6 +32,12 @@ class MainDemo extends Component {
         {/* Start Slogan Area */}
         <div className="swiper-area swiper-position-top pb--120 bg_color--1">
           <Slogan />
+        </div>
+        {/* End Slogan Area */}
+
+        {/* Start Slogan Area */}
+        <div className="about-area about-position-top pb--120 bg_color--5">
+          <About />
         </div>
         {/* End Slogan Area */}
 

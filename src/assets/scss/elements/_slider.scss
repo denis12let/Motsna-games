@@ -13,7 +13,7 @@
 }
 
 .slider-fixed--height {
-  min-height: 900px;
+  min-height: 1100px;
   width: 100%;
 
   @media #{$laptop-device} {
@@ -36,12 +36,12 @@
 Slider Default Style 
 ------------------------*/
 .slide {
-  margin-bottom: 400px;
+  margin-bottom: 140px;
   .inner {
     max-width: 1620px;
     width: 100%;
-    margin: 0 auto;
-    padding-top: 100px;
+    margin: 0 auto 160px;
+    // padding-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -90,6 +90,29 @@ Slider Default Style
           line-height: 50px;
           margin-bottom: 20px;
         }
+      }
+    }
+  }
+
+  .store-footer {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin: 0 -40px;
+    & .footer-stores {
+      display: flex;
+      gap: 40px;
+    }
+    & .footer-in {
+      margin-top: -30px;
+    }
+    & .store {
+      cursor: pointer;
+      transition: transform 1s ease;
+      &:hover {
+        transform: scale(1.2);
       }
     }
   }

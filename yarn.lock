@@ -1885,7 +1885,7 @@ for-each@^0.3.3, for-each@^0.3.5:
 
 framer-motion@^12.23.22:
   version "12.23.22"
-  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-12.23.22.tgz"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.23.22.tgz#798333fdcc5cd65fabfc450985b7236bbdbf5d64"
   integrity sha512-ZgGvdxXCw55ZYvhoZChTlG6pUuehecgvEAJz0BHoC5pQKW1EC5xf1Mul1ej5+ai+pVY0pylyFfdl45qnM1/GsA==
   dependencies:
     motion-dom "^12.23.21"
